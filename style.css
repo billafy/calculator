@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, html{
+    height: 100%;
+}
+.app{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 82% 18%;
+}
+.calculator-body{
+    height: inherit;
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+}
+.nav{
+    display: flex;
+    color: white;
+}
+.h2{
+    font-weight: 400;
+    flex: 1;
+    margin: auto;
+    pointer-events: none;
+}
+.hamburger{
+    display: flex;
+}
+.history{
+    background-color: rgb(27, 27, 27);
+}
+
+.history-button{
+    display: none;
+}
+.hamburger-a,.history-a{
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: white;
+}
+.hist{
+    text-align: end;
+    color: white;
+    padding: 0px 1rem 0px 0px;
+}
+.result h1{
+    color: white;
+    text-align: end;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 42px;
+}
+.hamburger-a:hover,.history-a:hover{
+    background-color: rgba(255, 255, 255, 0.219);
+    color: white;
+}
+.mbutton{
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.4rem 1rem;
+    background-color: #0000004f;
+    margin: 1px;
+}
+.numpad{
+    background-color: #000000d8;
+}
+.equals{
+    background-color: #0084ff59;
+}
+.mbutton:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.equals:active{
+    background-color: #0084ffe5 !important;
+}
+.equals:hover{
+    background-color: #0084ffbe;
+}
+.mbutton:active{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.mbuttons{
+    display: flex;
+    max-width: 100%;
+}
+.calcbuttons{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  height: calc(100% - 197px);
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .history{
+      display: none;
+  }
+  .app{
+    display: block;
+}
+.history-button{
+    display: flex;
+}
+  }
+
