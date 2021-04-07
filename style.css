@@ -8,9 +8,8 @@ body, html{
     height: 100%;
 }
 .app{
-    display: grid;
+    display: flex;
     height: 100%;
-    grid-template-columns: 82% 18%;
 }
 .calculator-body{
     height: inherit;
@@ -30,8 +29,10 @@ body, html{
 .hamburger{
     display: flex;
 }
-.history{
+.historypane{
     background-color: rgb(27, 27, 27);
+    width: 324px;
+    height: 100%;
 }
 
 .history-button{
@@ -59,13 +60,17 @@ body, html{
     background-color: rgba(255, 255, 255, 0.219);
     color: white;
 }
-.mbutton{
+.mbutton,.button{
     border: none;
     outline: none;
     color: white;
-    padding: 0.4rem 1rem;
-    background-color: #0000004f;
+    padding: 1rem 4%;
+    flex: auto;
+    background-color: #00000000;
     margin: 1px;
+}
+.button{
+    background-color: #0000004f;
 }
 .numpad{
     background-color: #000000d8;
@@ -73,7 +78,7 @@ body, html{
 .equals{
     background-color: #0084ff59;
 }
-.mbutton:hover{
+.mbutton:hover,.button:hover{
     background-color: rgba(255, 255, 255, 0.1);
 }
 .equals:active{
@@ -82,7 +87,7 @@ body, html{
 .equals:hover{
     background-color: #0084ffbe;
 }
-.mbutton:active{
+.mbutton:active,.button:active{
     background-color: rgba(255, 255, 255, 0.2);
 }
 .mbuttons{
@@ -94,7 +99,7 @@ body, html{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0px 0px;
-  height: calc(100% - 197px);
+  height: calc(100% - 215px);
   grid-template-areas:
     ". . . ."
     ". . . ."
@@ -102,6 +107,24 @@ body, html{
     ". . . ."
     ". . . ."
     ". . . .";
+}
+.history,.memory{
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    outline: none;
+}
+.history:hover,.memory:hover{
+    color: rgb(219, 219, 219);
+}
+.history:focus,.memory:focus{
+    text-decoration: underline rgb(0, 110, 255);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 4px;
 }
 
 
@@ -114,8 +137,8 @@ body, html{
 
 
 
-@media only screen and (max-width: 600px) {
-  .history{
+@media only screen and (max-width: 468px) {
+  .historypane{
       display: none;
   }
   .app{
