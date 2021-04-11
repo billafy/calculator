@@ -71,12 +71,15 @@ body, html{
 }
 .button{
     background-color: #0000004f;
+    font-size: 20px;
 }
 .numpad{
     background-color: #000000d8;
+    font-size: 20px;
 }
 .equals{
     background-color: #0084ff59;
+    font-size: 20px;
 }
 .mbutton:hover,.button:hover{
     background-color: rgba(255, 255, 255, 0.1);
