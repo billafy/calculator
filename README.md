@@ -1,3 +1,2 @@
 # Calculator
-Microsoft Calculator inspired UI created by devadula-nandan
-'Reactified' by me
+Microsoft Calculator inspired UI created by devadula-nandan and 'Reactified' by me
