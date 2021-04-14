@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="calculator-body">
+            <nav class="nav">
+                <div class="hamburger">
+                    <a class="hamburger-a" href=""><i class="fas fa-bars"></i></a>
+                </div>
+                <h2 class="h2">Standard</h2>
+                <div class="history-button">
+                    <a class="history-a" href=""><i class="fas fa-history"></i></a>
+                </div>
+            </nav>
+            <div class="result">
+                <pre class="hist">00</pre>
+                <h1>0</h1>
+            </div>
+            <div class="mbuttons">
+                <button class="button1 mbutton" title="Clear all memory (Ctrl+L)">MC</button>
+                <button class="button2 mbutton" title="Memory recall (Ctrl+R)">MR</button>
+                <button class="button3 mbutton" title="Memory add (Ctrl+P)">M+</button>
+                <button class="button4 mbutton" title="Memory subtract (Ctrl+Q)">M-</button>
+                <button class="button5 mbutton" title="Memory store (Ctrl+M)">MS</button>
+                <button class="button6 mbutton" title="Memory">M</button>
+            </div>
+
+            <div class="calcbuttons">
+                <button class="button7 button" title="Memory">%</button>
+                <button class="button8 button" title="Memory">CE</button>
+                <button class="button9 button" title="Memory">C</button>
+                <button class="button10 button" title="Memory"><i class="fas fa-backspace"></i></button>
+                <button class="button11 button" title="Memory">1/x</button>
+                <button class="button12 button" title="Memory">x²</button>
+                <button class="button13 button" title="Memory">²√x</button>
+                <button class="button14 button" title="Memory">÷</button>
+                <button class="button15 button numpad" title="Memory">7</button>
+                <button class="button16 button numpad" title="Memory">8</button>
+                <button class="button17 button numpad" title="Memory">9</button>
+                <button class="button18 button" title="Memory">x</button>
+                <button class="button19 button numpad" title="Memory">4</button>
+                <button class="button20 button numpad" title="Memory">5</button>
+                <button class="button21 button numpad" title="Memory">6</button>
+                <button class="button22 button" title="Memory">-</button>
+                <button class="button23 button numpad" title="Memory">1</button>
+                <button class="button24 button numpad" title="Memory">2</button>
+                <button class="button25 button numpad" title="Memory">3</button>
+                <button class="button26 button" title="Memory">+</button>
+                <button class="button27 button numpad" title="Memory">+/-</button>
+                <button class="button28 button numpad" title="Memory">0</button>
+                <button class="button29 button numpad" title="Memory">.</button>
+                <button class="button30 button equals" title="Memory">=</button>
+            </div>
+
+        </div>
+        <div class="historypane">
+            <button class="history">History</button>
+            <button class="memory">Memory</button>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
